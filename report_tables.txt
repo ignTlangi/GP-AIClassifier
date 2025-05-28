@@ -1,0 +1,41 @@
+Overall, the results suggest that:
+MLP shows more consistent performance across different seeds
+GP can achieve excellent results (as seen in seed 1) but has higher variance
+The differences between the models are not statistically significant at a=0.05
+
+
+Table 1: Comparison of GP and MLP Results by Seed
+================================================================================
+ Seed Model Accuracy F1 Score Precision  Recall
+    1    GP   99.62%   99.63%    99.25% 100.00%
+    1   MLP   88.59%   88.46%    90.73%  88.59%
+  314    GP   83.65%   80.72%   100.00%  67.67%
+  314   MLP   96.58%   96.57%    96.79%  96.58%
+  999    GP   65.40%   49.72%    93.75%  33.83%
+  999   MLP   96.58%   96.57%    96.79%  96.58%
+
+Table 2: Summary Statistics and Statistical Significance
+================================================================================
+   Metric           GP Mean         MLP Mean Difference p-value Significant
+ Accuracy 82.89% +/- 13.98% 93.92% +/- 3.76%    +11.03%  0.5000          No
+ F1 Score 76.69% +/- 20.57% 93.87% +/- 3.83%    +17.18%  0.5000          No
+Precision  97.67% +/- 2.79% 94.77% +/- 2.86%     -2.89%  0.5000          No
+   Recall 67.17% +/- 27.02% 93.92% +/- 3.76%    +26.75%  0.5000          No
+
+Key Findings:
+Accuracy:
+- GP performed better for seed 1 (99.62% vs 88.59%)
+- MLP performed better for seeds 314 and 999 (96.58% vs 83.65% and 65.40%)
+- The difference is not statistically significant (p-value = 0.5000)
+
+F1 Score:
+- GP performed better for seed 1 (99.63% vs 88.46%)
+- MLP performed better for seeds 314 and 999 (96.57% vs 80.72% and 49.72%)
+
+Precision:
+- GP achieved high precision across all seeds (99.25%, 100%, 93.75%)
+- MLP had more consistent precision (90.73%, 96.79%, 96.79%)
+
+Recall:
+- GP showed high variance in recall (100%, 67.67%, 33.83%)
+- MLP was more consistent (88.59%, 96.58%, 96.58%)

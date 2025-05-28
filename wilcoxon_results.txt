@@ -1,0 +1,48 @@
+Data values:
+
+ACCURACY:
+GP values: [0.9799 0.5678 0.6734]
+MLP values: [0.88593156 0.96577947 0.96577947]
+
+PRECISION:
+GP values: [1.     0.5276 0.6119]
+MLP values: [0.90731939 0.96794837 0.96794837]
+
+RECALL:
+GP values: [0.9579 0.9053 0.8632]
+MLP values: [0.88593156 0.96577947 0.96577947]
+
+F1:
+GP values: [0.9785 0.6667 0.7162]
+MLP values: [0.88458154 0.96572592 0.96572592]
+
+Wilcoxon Signed-Rank Test Results
+========================================
+
+Metric: ACCURACY
+GP mean: 0.7404 ± 0.1748
+MLP mean: 0.9392 ± 0.0376
+Wilcoxon statistic: 1.0000
+p-value: 0.5000
+Significant difference (a=0.05): No
+
+Metric: PRECISION
+GP mean: 0.7132 ± 0.2057
+MLP mean: 0.9477 ± 0.0286
+Wilcoxon statistic: 1.0000
+p-value: 0.5000
+Significant difference (a=0.05): No
+
+Metric: RECALL
+GP mean: 0.9088 ± 0.0387
+MLP mean: 0.9392 ± 0.0376
+Wilcoxon statistic: 2.0000
+p-value: 0.7500
+Significant difference (a=0.05): No
+
+Metric: F1
+GP mean: 0.7871 ± 0.1368
+MLP mean: 0.9387 ± 0.0383
+Wilcoxon statistic: 1.0000
+p-value: 0.5000
+Significant difference (a=0.05): No

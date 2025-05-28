@@ -1,0 +1,80 @@
+{
+  "1": {
+    "train_path": "C:/Users/HP/Downloads/Euro_USD Stock/BTC_train.csv",
+    "test_path": "C:/Users/HP/Downloads/Euro_USD Stock/BTC_test.csv",
+    "metrics": {
+      "training": {
+        "accuracy": 89.57915831663327,
+        "f1": 0.8953476951590816,
+        "precision": 0.8981331576088725,
+        "recall": 0.8957915831663327,
+        "confusion": [
+          [397, 73],
+          [31, 497]
+        ]
+      },
+      "test": {
+        "accuracy": 88.59315589353612,
+        "f1": 0.8845815379350345,
+        "precision": 0.907319391634981,
+        "recall": 0.8859315589353612,
+        "confusion": [
+          [130, 0],
+          [30, 103]
+        ]
+      }
+    }
+  },
+  "314": {
+    "train_path": "C:/Users/HP/Downloads/Euro_USD Stock/BTC_train.csv",
+    "test_path": "C:/Users/HP/Downloads/Euro_USD Stock/BTC_test.csv",
+    "metrics": {
+      "training": {
+        "accuracy": 87.87575150300601,
+        "f1": 0.8787352384375576,
+        "precision": 0.885305842775531,
+        "recall": 0.8787575150300602,
+        "confusion": [
+          [440, 30],
+          [91, 437]
+        ]
+      },
+      "test": {
+        "accuracy": 96.57794676806084,
+        "f1": 0.9657259245079827,
+        "precision": 0.967948374658598,
+        "recall": 0.9657794676806084,
+        "confusion": [
+          [121, 9],
+          [0, 133]
+        ]
+      }
+    }
+  },
+  "999": {
+    "train_path": "C:/Users/HP/Downloads/Euro_USD Stock/BTC_train.csv",
+    "test_path": "C:/Users/HP/Downloads/Euro_USD Stock/BTC_test.csv",
+    "metrics": {
+      "training": {
+        "accuracy": 82.86573146292585,
+        "f1": 0.8269315679337277,
+        "precision": 0.8558399162874314,
+        "recall": 0.8286573146292585,
+        "confusion": [
+          [451, 19],
+          [152, 376]
+        ]
+      },
+      "test": {
+        "accuracy": 96.57794676806084,
+        "f1": 0.9657259245079827,
+        "precision": 0.967948374658598,
+        "recall": 0.9657794676806084,
+        "confusion": [
+          [121, 9],
+          [0, 133]
+        ]
+      }
+    }
+  }
+}

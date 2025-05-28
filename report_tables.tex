@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{caption}
+\usepackage[table]{xcolor}
+
+\title{GP vs MLP Performance Comparison}
+\author{Statistical Analysis Results}
+
+\begin{document}
+\maketitle
+
+\section*{Statistical Analysis Details}
+The comparison between GP and MLP models was conducted using the Wilcoxon signed-rank test with significance level $a = 0.05$. This non-parametric test was chosen due to the small sample size (3 seeds) and no assumption of normal distribution. A p-value $< 0.05$ would indicate a statistically significant difference between the models.
+
+\begin{table}[ht]
+\centering
+\caption{Comparison of GP and MLP Results by Seed}
+\begin{tabular}{cccccc}
+\toprule
+Seed & Model & Accuracy & F1 Score & Precision & Recall \\
+\midrule
+1 & GP & 99.62% & 99.63% & 99.25% & 100.00% \\
+1 & MLP & 88.59% & 88.46% & 90.73% & 88.59% \\
+314 & GP & 83.65% & 80.72% & 100.00% & 67.67% \\
+314 & MLP & 96.58% & 96.57% & 96.79% & 96.58% \\
+999 & GP & 65.40% & 49.72% & 93.75% & 33.83% \\
+999 & MLP & 96.58% & 96.57% & 96.79% & 96.58% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Summary Statistics and Statistical Significance}
+\begin{tabular}{lccccc}
+\toprule
+Metric & GP Mean & MLP Mean & Difference & p-value & Significant \\
+\midrule
+Accuracy & 82.89\% ± 13.98\% & 93.92\% ± 3.76\% & +11.03\% & 0.5000 & No \\
+F1 Score & 76.69\% ± 20.57\% & 93.87\% ± 3.83\% & +17.18\% & 0.5000 & No \\
+Precision & 97.67\% ± 2.79\% & 94.77\% ± 2.86\% & -2.89\% & 0.5000 & No \\
+Recall & 67.17\% ± 27.02\% & 93.92\% ± 3.76\% & +26.75\% & 0.5000 & No \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}
